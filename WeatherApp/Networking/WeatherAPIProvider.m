@@ -16,12 +16,11 @@
     
     NSURLSession *session = [NSURLSession sharedSession];
     
-    [session dataTaskWithURL:[NSURL URLWithString:weatherURL]
+    [[session dataTaskWithURL:[NSURL URLWithString:weatherURL]
            completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                //TODO: check errors.
                completionBlock(data);
-               
-    }];
+    }] resume];
 }
 
 - (void)nextWeekForecastWithCompletionBlock:(void (^)(NSData *))completionBlock
