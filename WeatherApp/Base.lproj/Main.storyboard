@@ -113,6 +113,9 @@
                                             <constraint firstAttribute="width" constant="132" id="zM9-Zt-u8l"/>
                                         </constraints>
                                     </imageView>
+                                    <activityIndicatorView opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="bay-Hj-ZOF">
+                                        <rect key="frame" x="290" y="266" width="20" height="20"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="zDK-5f-k2w" firstAttribute="leading" secondItem="NtX-rC-zRW" secondAttribute="leading" id="0I9-Dm-ydF"/>
@@ -138,6 +141,7 @@
                                     <constraint firstItem="Lvk-h4-G8v" firstAttribute="top" secondItem="Xdr-Gb-JO1" secondAttribute="topMargin" constant="20" id="VdA-2y-pTV"/>
                                     <constraint firstItem="zDK-5f-k2w" firstAttribute="leading" secondItem="bHT-AS-nvx" secondAttribute="leading" id="WqP-SP-0bN"/>
                                     <constraint firstItem="zDK-5f-k2w" firstAttribute="leading" secondItem="xAp-D6-M8r" secondAttribute="leading" id="Xrk-ae-Laa"/>
+                                    <constraint firstAttribute="centerX" secondItem="bay-Hj-ZOF" secondAttribute="centerX" id="YMz-9k-3QK"/>
                                     <constraint firstItem="l5S-rf-pmj" firstAttribute="top" secondItem="Xdr-Gb-JO1" secondAttribute="topMargin" constant="20" id="ZZq-bh-Cbf"/>
                                     <constraint firstItem="UWY-t0-W6k" firstAttribute="leading" secondItem="QAP-6l-seb" secondAttribute="leading" id="aZH-nM-toH"/>
                                     <constraint firstItem="ffd-Rb-hL0" firstAttribute="top" secondItem="zDK-5f-k2w" secondAttribute="bottom" constant="20" id="chx-kF-fqY"/>
@@ -148,6 +152,7 @@
                                     <constraint firstAttribute="trailing" secondItem="RF8-SD-Y1A" secondAttribute="trailing" id="i2X-7h-tBF"/>
                                     <constraint firstItem="QAP-6l-seb" firstAttribute="top" secondItem="NAH-us-paH" secondAttribute="bottom" constant="20" id="k3o-DT-DgJ"/>
                                     <constraint firstItem="zEk-1G-9J2" firstAttribute="leading" secondItem="l5S-rf-pmj" secondAttribute="trailing" constant="38" id="mnx-JJ-7Rn"/>
+                                    <constraint firstAttribute="centerY" secondItem="bay-Hj-ZOF" secondAttribute="centerY" id="n1X-fk-KS3"/>
                                     <constraint firstItem="UWY-t0-W6k" firstAttribute="leading" secondItem="bhJ-tr-aah" secondAttribute="leading" id="pfC-iq-6MZ"/>
                                     <constraint firstItem="bcG-YU-2YC" firstAttribute="top" secondItem="bhJ-tr-aah" secondAttribute="bottom" constant="20" id="rdS-fE-ym8"/>
                                     <constraint firstItem="bhJ-tr-aah" firstAttribute="top" secondItem="l5S-rf-pmj" secondAttribute="bottom" constant="20" id="sdc-tR-N72"/>
@@ -189,6 +194,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Current time" id="RkJ-1Z-Lw9"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="bay-Hj-ZOF" id="Ycd-M3-ajo"/>
                         <outlet property="cityNameLabel" destination="zEk-1G-9J2" id="Dn4-Do-G3s"/>
                         <outlet property="humidityLabel" destination="xAp-D6-M8r" id="jgI-XZ-GI3"/>
                         <outlet property="iconImageView" destination="Lvk-h4-G8v" id="23r-ZC-2yC"/>
