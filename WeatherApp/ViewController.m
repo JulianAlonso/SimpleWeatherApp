@@ -21,7 +21,6 @@
     [super viewDidLoad];
     
     [self downloadCurrentForecast];
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,7 +35,7 @@
         __strong typeof(weakSelf) strongSelf = self;
         
         Forecast *todayWeather = [strongSelf.forecastParser parseForecastWithData:resultData];
-        NSLog(@"Forecast in %@", todayWeather.cityName);
+        NSLog(@"%@", todayWeather.cityName);
     }];
 }
 

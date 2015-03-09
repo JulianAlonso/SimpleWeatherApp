@@ -24,6 +24,12 @@
             
             forecast.cityName = [[newData valueForKey:@"name"]firstObject];
             forecast.iconURL = [self iconUrlFromDictionary:newData];
+            forecast.temp = [[[[newData valueForKeyPath:@"main"] firstObject] valueForKey:@"temp"] floatValue];
+            forecast.minTemp = [[[[newData valueForKey:@"main"] firstObject] valueForKey:@"temp_min"] floatValue];
+            forecast.maxTemp = [[[[newData valueForKey:@"main"] firstObject] valueForKey:@"temp_max"] floatValue];
+            forecast.pressure = [[[[newData valueForKey:@"main"] firstObject] valueForKey:@"pressure"] floatValue];
+            forecast.humidity = [[[[newData valueForKey:@"main"] firstObject] valueForKey:@"humidity"] floatValue];
+            forecast.weatherDescription = [[[[newData valueForKey:@"weather"] firstObject] valueForKey:@"description"] firstObject];
             
             return forecast;
         }
@@ -36,7 +42,6 @@
 {
     NSString *iconSuffix = [[[[dictionary valueForKey:@"weather"]firstObject] valueForKey:@"icon"]firstObject];
     return  [NSString stringWithFormat:@"http://openweathermap.org/img/w/%@.png", iconSuffix];
-    
 }
 
 @end
