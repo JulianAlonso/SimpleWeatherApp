@@ -32,6 +32,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"Current time";
+    
     [self downloadCurrentForecast];
 }
 

@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Current Time-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="Current Time" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -187,7 +187,7 @@
                             <constraint firstItem="Xdr-Gb-JO1" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="zan-cZ-wJc"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="RkJ-1Z-Lw9"/>
+                    <tabBarItem key="tabBarItem" title="Current time" id="RkJ-1Z-Lw9"/>
                     <connections>
                         <outlet property="cityNameLabel" destination="zEk-1G-9J2" id="Dn4-Do-G3s"/>
                         <outlet property="humidityLabel" destination="xAp-D6-M8r" id="jgI-XZ-GI3"/>
@@ -203,6 +203,25 @@
             </objects>
             <point key="canvasLocation" x="1402" y="258"/>
         </scene>
+        <!--Next days-->
+        <scene sceneID="uoZ-v6-fjl">
+            <objects>
+                <viewController title="Next days" id="ZEg-Fk-kLp" customClass="NextDaysViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gVa-Wz-eiw"/>
+                        <viewControllerLayoutGuide type="bottom" id="4RK-TM-bXd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IeS-XS-kSg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Next days" id="1Nr-sU-BDJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cua-SX-23J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1402" y="1009"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="mP1-7J-aA7">
             <objects>
@@ -215,6 +234,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="Fvd-f6-j5Z"/>
+                        <segue destination="ZEg-Fk-kLp" kind="relationship" relationship="viewControllers" id="MFx-sj-kdZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2HY-7f-7wm" userLabel="First Responder" sceneMemberID="firstResponder"/>

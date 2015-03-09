@@ -18,6 +18,7 @@
 		011F29AC1AADC04B008EEEE5 /* WeatherAPIProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 011F29AB1AADC04B008EEEE5 /* WeatherAPIProvider.m */; };
 		011F29B21AADC2D0008EEEE5 /* ForecastParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 011F29B11AADC2D0008EEEE5 /* ForecastParser.m */; };
 		011F29B51AADDDDC008EEEE5 /* ImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 011F29B41AADDDDC008EEEE5 /* ImageDownloader.m */; };
+		011F29B81AADE212008EEEE5 /* NextDaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 011F29B71AADE212008EEEE5 /* NextDaysViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		011F29B11AADC2D0008EEEE5 /* ForecastParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ForecastParser.m; path = Parsers/ForecastParser.m; sourceTree = "<group>"; };
 		011F29B31AADDDDC008EEEE5 /* ImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageDownloader.h; path = Networking/ImageDownloader.h; sourceTree = "<group>"; };
 		011F29B41AADDDDC008EEEE5 /* ImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageDownloader.m; path = Networking/ImageDownloader.m; sourceTree = "<group>"; };
+		011F29B61AADE212008EEEE5 /* NextDaysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextDaysViewController.h; sourceTree = "<group>"; };
+		011F29B71AADE212008EEEE5 /* NextDaysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextDaysViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 				011F29841AADBE16008EEEE5 /* AppDelegate.m */,
 				011F29861AADBE16008EEEE5 /* ViewController.h */,
 				011F29871AADBE16008EEEE5 /* ViewController.m */,
+				011F29B61AADE212008EEEE5 /* NextDaysViewController.h */,
+				011F29B71AADE212008EEEE5 /* NextDaysViewController.m */,
 				011F29891AADBE16008EEEE5 /* Main.storyboard */,
 				011F298C1AADBE16008EEEE5 /* Images.xcassets */,
 				011F298E1AADBE16008EEEE5 /* LaunchScreen.xib */,
@@ -267,6 +272,7 @@
 			files = (
 				011F29A81AADBEE2008EEEE5 /* Forecast.m in Sources */,
 				011F29B21AADC2D0008EEEE5 /* ForecastParser.m in Sources */,
+				011F29B81AADE212008EEEE5 /* NextDaysViewController.m in Sources */,
 				011F29881AADBE16008EEEE5 /* ViewController.m in Sources */,
 				011F29851AADBE16008EEEE5 /* AppDelegate.m in Sources */,
 				011F29821AADBE16008EEEE5 /* main.m in Sources */,
