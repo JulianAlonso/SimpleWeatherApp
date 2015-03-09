@@ -38,9 +38,37 @@
     return nil;
 }
 
+- (NSArray *)parseWeekForecastWithData:(NSData *)data
+{
+    NSError *error;
+    NSDictionary *jsonObjects = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+    
+    if (!error)
+    {
+        if (jsonObjects)
+        {
+            NSMutableArray *array = [NSMutableArray array];
+            NSString *cityName = [jsonObjects valueForKeyPath:@"city.name"];
+            
+            for (NSDictionary *dic in jsonObjects[@"list"])
+            {
+                Forecast *forecast = [[Forecast alloc] init];
+                forecast.cityName = cityName;
+                forecast.weatherDescription = [[[dic valueForKeyPath:@"weather"] firstObject] valueForKeyPath:@"description"];
+                forecast.iconURL = [self iconUrlFromDictionary:dic];
+                forecast.temp = [[dic valueForKeyPath:@"temp.eve"] floatValue];
+                
+                [array addObject:forecast];
+            }
+            return array;
+        }
+    }
+    return nil;
+}
+
 - (NSString *)iconUrlFromDictionary:(NSDictionary *)dictionary
 {
-    NSString *iconSuffix = [[[[dictionary valueForKey:@"weather"]firstObject] valueForKey:@"icon"]firstObject];
+    NSString *iconSuffix = [[[dictionary valueForKey:@"weather"]firstObject] valueForKey:@"icon"];
     return  [NSString stringWithFormat:@"http://openweathermap.org/img/w/%@.png", iconSuffix];
 }
 

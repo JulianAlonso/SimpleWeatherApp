@@ -13,4 +13,6 @@
 
 - (Forecast *)parseForecastWithData:(NSData *)data;
 
+- (NSArray *)parseWeekForecastWithData:(NSData *)data;
+
 @end
