@@ -33,8 +33,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"Current time";
-    
     [self downloadCurrentForecast];
 }
 
@@ -55,7 +53,6 @@
         strongSelf.currentForecast = [strongSelf.forecastParser parseForecastWithData:resultData];
         
         [strongSelf updateViewElements];
-        [strongSelf hideActivityIndicator];
     }];
 }
 
@@ -66,21 +63,22 @@
     self.minTempLabel.text = [NSString stringWithFormat:@"%.0f", self.currentForecast.minTemp];
     self.maxTempLabel.text = [NSString stringWithFormat:@"%.0f", self.currentForecast.maxTemp];
     self.pressureLabel.text = [NSString stringWithFormat:@"%.0f", self.currentForecast.pressure];
-    self.humidityLabel.text = [NSString stringWithFormat:@"%.0f", self.currentForecast.humidity];
+    self.humidityLabel.text = [NSString stringWithFormat:@"%.0f%%", self.currentForecast.humidity];
     self.weatherDescriptionLabel.text = self.currentForecast.weatherDescription;
     
     [ImageDownloader imageWithURL:self.currentForecast.iconURL completionBlock:^(UIImage *image) {
-        
         self.iconImageView.image = image;
-        
+        [self hideActivityIndicator];
     }];
 }
 
 - (void)hideActivityIndicator
 {
+    __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-        self.activityIndicator.alpha = 0.0f;
-        [self.activityIndicator stopAnimating];
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        strongSelf.activityIndicator.alpha = 0.0f;
+        [strongSelf.activityIndicator stopAnimating];
     });
 }
 

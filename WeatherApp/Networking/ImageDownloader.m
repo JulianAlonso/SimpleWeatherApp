@@ -21,10 +21,7 @@
             completionBlock([UIImage imageWithData:imageData]);
             
         });
-        
     });
-    
-    
 }
 
 @end

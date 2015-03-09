@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WeatherAPIHelper.h"
+
+@class ForecastParser;
 
 @interface NextDaysViewController : UIViewController
+
+@property (nonatomic, strong) id<WeatherAPIHelper> weatherAPIHelper;
+@property (nonatomic, strong) ForecastParser *forecastParser;
 
 @end

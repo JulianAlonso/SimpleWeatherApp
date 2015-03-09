@@ -220,9 +220,33 @@
                     <view key="view" contentMode="scaleToFill" id="IeS-XS-kSg">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="oM7-LQ-yqe">
+                                <rect key="frame" x="0.0" y="10" width="600" height="545"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="uVZ-Qo-ORN" customClass="WeatherTableViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="uVZ-Qo-ORN" id="x1q-IT-QUd">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="oM7-LQ-yqe" secondAttribute="bottom" constant="45" id="AlW-41-7r9"/>
+                            <constraint firstItem="oM7-LQ-yqe" firstAttribute="top" secondItem="IeS-XS-kSg" secondAttribute="top" constant="10" id="a8F-kH-bYi"/>
+                            <constraint firstAttribute="trailing" secondItem="oM7-LQ-yqe" secondAttribute="trailing" id="qY2-qK-WhA"/>
+                            <constraint firstItem="oM7-LQ-yqe" firstAttribute="leading" secondItem="IeS-XS-kSg" secondAttribute="leading" id="rqv-ZW-bVr"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Next days" id="1Nr-sU-BDJ"/>
+                    <connections>
+                        <outlet property="weatherTableView" destination="oM7-LQ-yqe" id="jlV-IC-5kV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cua-SX-23J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

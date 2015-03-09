@@ -19,6 +19,8 @@
 		011F29B21AADC2D0008EEEE5 /* ForecastParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 011F29B11AADC2D0008EEEE5 /* ForecastParser.m */; };
 		011F29B51AADDDDC008EEEE5 /* ImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 011F29B41AADDDDC008EEEE5 /* ImageDownloader.m */; };
 		011F29B81AADE212008EEEE5 /* NextDaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 011F29B71AADE212008EEEE5 /* NextDaysViewController.m */; };
+		011F29BC1AADEB05008EEEE5 /* WeatherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 011F29BA1AADEB05008EEEE5 /* WeatherTableViewCell.m */; };
+		011F29BD1AADEB05008EEEE5 /* WeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 011F29BB1AADEB05008EEEE5 /* WeatherTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		011F29B41AADDDDC008EEEE5 /* ImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageDownloader.m; path = Networking/ImageDownloader.m; sourceTree = "<group>"; };
 		011F29B61AADE212008EEEE5 /* NextDaysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextDaysViewController.h; sourceTree = "<group>"; };
 		011F29B71AADE212008EEEE5 /* NextDaysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextDaysViewController.m; sourceTree = "<group>"; };
+		011F29B91AADEB05008EEEE5 /* WeatherTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherTableViewCell.h; sourceTree = "<group>"; };
+		011F29BA1AADEB05008EEEE5 /* WeatherTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherTableViewCell.m; sourceTree = "<group>"; };
+		011F29BB1AADEB05008EEEE5 /* WeatherTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +111,9 @@
 				011F29871AADBE16008EEEE5 /* ViewController.m */,
 				011F29B61AADE212008EEEE5 /* NextDaysViewController.h */,
 				011F29B71AADE212008EEEE5 /* NextDaysViewController.m */,
+				011F29B91AADEB05008EEEE5 /* WeatherTableViewCell.h */,
+				011F29BA1AADEB05008EEEE5 /* WeatherTableViewCell.m */,
+				011F29BB1AADEB05008EEEE5 /* WeatherTableViewCell.xib */,
 				011F29891AADBE16008EEEE5 /* Main.storyboard */,
 				011F298C1AADBE16008EEEE5 /* Images.xcassets */,
 				011F298E1AADBE16008EEEE5 /* LaunchScreen.xib */,
@@ -250,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				011F29BD1AADEB05008EEEE5 /* WeatherTableViewCell.xib in Resources */,
 				011F298B1AADBE16008EEEE5 /* Main.storyboard in Resources */,
 				011F29901AADBE16008EEEE5 /* LaunchScreen.xib in Resources */,
 				011F298D1AADBE16008EEEE5 /* Images.xcassets in Resources */,
@@ -272,6 +281,7 @@
 			files = (
 				011F29A81AADBEE2008EEEE5 /* Forecast.m in Sources */,
 				011F29B21AADC2D0008EEEE5 /* ForecastParser.m in Sources */,
+				011F29BC1AADEB05008EEEE5 /* WeatherTableViewCell.m in Sources */,
 				011F29B81AADE212008EEEE5 /* NextDaysViewController.m in Sources */,
 				011F29881AADBE16008EEEE5 /* ViewController.m in Sources */,
 				011F29851AADBE16008EEEE5 /* AppDelegate.m in Sources */,
