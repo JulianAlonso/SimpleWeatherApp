@@ -25,7 +25,7 @@
 
 - (void)nextWeekForecastWithCompletionBlock:(void (^)(NSData *))completionBlock
 {
-    NSString *weatherURL = @"http://speedy-bison-5608.vagrantshare.com/person/";//@"http://api.openweathermap.org/data/2.5/forecast/daily?q=Madrid,es&units=metric&cnt=7";
+    NSString *weatherURL = @"http://api.openweathermap.org/data/2.5/forecast/daily?q=Madrid,es&units=metric&cnt=7";
     
     NSURLSession *session = [NSURLSession sharedSession];
     
