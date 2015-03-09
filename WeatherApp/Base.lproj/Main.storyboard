@@ -188,6 +188,16 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="RkJ-1Z-Lw9"/>
+                    <connections>
+                        <outlet property="cityNameLabel" destination="zEk-1G-9J2" id="Dn4-Do-G3s"/>
+                        <outlet property="humidityLabel" destination="xAp-D6-M8r" id="jgI-XZ-GI3"/>
+                        <outlet property="iconImageView" destination="Lvk-h4-G8v" id="23r-ZC-2yC"/>
+                        <outlet property="maxTempLabel" destination="ffd-Rb-hL0" id="w5A-TR-PLj"/>
+                        <outlet property="minTempLabel" destination="zDK-5f-k2w" id="j0M-Tc-K5B"/>
+                        <outlet property="pressureLabel" destination="bHT-AS-nvx" id="vfS-6v-Sw2"/>
+                        <outlet property="tempLabel" destination="NtX-rC-zRW" id="5TC-lJ-cn3"/>
+                        <outlet property="weatherDescriptionLabel" destination="RF8-SD-Y1A" id="4df-AN-oPK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

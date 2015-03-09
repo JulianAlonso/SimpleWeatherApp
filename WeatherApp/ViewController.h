@@ -10,6 +10,7 @@
 #import "WeatherAPIHelper.h"
 
 @class ForecastParser;
+@class ImageDownloader;
 
 @interface ViewController : UIViewController
 
