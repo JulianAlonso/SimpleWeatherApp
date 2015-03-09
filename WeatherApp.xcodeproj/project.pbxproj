@@ -14,6 +14,8 @@
 		011F298D1AADBE16008EEEE5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 011F298C1AADBE16008EEEE5 /* Images.xcassets */; };
 		011F29901AADBE16008EEEE5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 011F298E1AADBE16008EEEE5 /* LaunchScreen.xib */; };
 		011F299C1AADBE17008EEEE5 /* WeatherAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 011F299B1AADBE17008EEEE5 /* WeatherAppTests.m */; };
+		011F29A81AADBEE2008EEEE5 /* Forecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 011F29A71AADBEE2008EEEE5 /* Forecast.m */; };
+		011F29AC1AADC04B008EEEE5 /* WeatherAPIProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 011F29AB1AADC04B008EEEE5 /* WeatherAPIProvider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,11 @@
 		011F29951AADBE16008EEEE5 /* WeatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		011F299A1AADBE17008EEEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		011F299B1AADBE17008EEEE5 /* WeatherAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherAppTests.m; sourceTree = "<group>"; };
+		011F29A61AADBEE2008EEEE5 /* Forecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Forecast.h; path = Model/Forecast.h; sourceTree = "<group>"; };
+		011F29A71AADBEE2008EEEE5 /* Forecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Forecast.m; path = Model/Forecast.m; sourceTree = "<group>"; };
+		011F29AA1AADC04B008EEEE5 /* WeatherAPIProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeatherAPIProvider.h; path = Networking/WeatherAPIProvider.h; sourceTree = "<group>"; };
+		011F29AB1AADC04B008EEEE5 /* WeatherAPIProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeatherAPIProvider.m; path = Networking/WeatherAPIProvider.m; sourceTree = "<group>"; };
+		011F29AE1AADC08C008EEEE5 /* WeatherAPIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeatherAPIHelper.h; path = Networking/WeatherAPIHelper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +88,8 @@
 		011F297E1AADBE16008EEEE5 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				011F29A91AADC01F008EEEE5 /* Networking */,
+				011F29A51AADBEBD008EEEE5 /* Model */,
 				011F29831AADBE16008EEEE5 /* AppDelegate.h */,
 				011F29841AADBE16008EEEE5 /* AppDelegate.m */,
 				011F29861AADBE16008EEEE5 /* ViewController.h */,
@@ -117,6 +126,25 @@
 				011F299A1AADBE17008EEEE5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		011F29A51AADBEBD008EEEE5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				011F29A61AADBEE2008EEEE5 /* Forecast.h */,
+				011F29A71AADBEE2008EEEE5 /* Forecast.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		011F29A91AADC01F008EEEE5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				011F29AA1AADC04B008EEEE5 /* WeatherAPIProvider.h */,
+				011F29AB1AADC04B008EEEE5 /* WeatherAPIProvider.m */,
+				011F29AE1AADC08C008EEEE5 /* WeatherAPIHelper.h */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +247,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				011F29A81AADBEE2008EEEE5 /* Forecast.m in Sources */,
 				011F29881AADBE16008EEEE5 /* ViewController.m in Sources */,
 				011F29851AADBE16008EEEE5 /* AppDelegate.m in Sources */,
 				011F29821AADBE16008EEEE5 /* main.m in Sources */,
+				011F29AC1AADC04B008EEEE5 /* WeatherAPIProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
